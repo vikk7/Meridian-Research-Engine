@@ -23,7 +23,7 @@ class TavilySearchEngine(SearchEngine):
         response = self.client.search(
             query=query,
             search_depth="basic",
-            max_results=4
+            max_results=2
         )
 
         return response.get("results", [])
